@@ -1,0 +1,239 @@
+#simple-keyboard {
+	padding: 2em;
+	margin: 1em;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+
+#simple-keyboard button {
+	font-size: 2em;
+	width: 60px;
+	height: 120px;
+}
+
+#black-keys button {
+	background-color: #112211;
+	color: #f9f9f9;
+}
+
+#white-keys button {
+	background-color: #e8e8e8;
+	color: #112211;
+}
+
+#notes-to-play {
+    border: 2px solid black;
+    padding: 20px;
+    width: 400px;
+    text-align: left;
+	border-radius: 0.75em;
+	margin-bottom: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	background: #f9f8f8;
+}
+
+.spacer {
+	margin-right: 30px;
+}
+
+.recording {
+	background-color: red;
+}
+
+#start-recording, #stop-recording {
+	font-size: 2em;
+}
+
+#start-playing, #back {
+	padding: 0em;
+    margin: 1em;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+#controls {
+	text-align: center;
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+button {
+   --button_radius: 0.75em;
+   --button_color: #e8e8e8;
+   --button_outline_color: #000000;
+   font-size: 10px;
+   font-weight: bold;
+   border: none;
+   border-radius: var(--button_radius);
+   background: var(--button_outline_color);
+}
+  
+  .button_top {
+   display: block;
+   box-sizing: border-box;
+   border: 2px solid var(--button_outline_color);
+   border-radius: var(--button_radius);
+   padding: 0.75em 1.5em;
+   background: var(--button_color);
+   color: var(--button_outline_color);
+   transform: translateY(-0.2em);
+   transition: transform 0.1s ease;
+  }
+  
+  button:hover .button_top {
+	/* Pull the button upwards when hovered */
+   transform: translateY(-0.33em);
+  }
+  
+  button:active .button_top {
+	/* Push the button downwards when pressed */
+   transform: translateY(0);
+  }
+
+
+  .button_b {
+	--button_radius: 0.75em;
+	--button_color: #e8e8e8;
+	--button_outline_color: #000000;
+	font-size: 10px;
+	font-weight: bold;
+	border: none;
+	border-radius: var(--button_radius);
+	background: var(--button_outline_color);
+   }
+
+  .button_b {
+	display: block;
+	box-sizing: border-box;
+	border-radius: var(--button_radius);
+	padding: 0.75em 1.5em;
+	background: var(--button_color);
+	color: var(--button_outline_color);
+   }
+
+   #load-json, #post-json{
+	font-size: 2em;
+	}
+
+  * {
+	outline: 0;
+	font-family: sans-serif
+  }
+  body {
+	background-color: #fafafa
+  }
+  span.msg,
+  span.choose {
+	color: #555;
+	padding: 5px 0 10px;
+	display: inherit
+  }
+  .container {
+	width: 500px;
+	margin: 50px auto 0;
+	text-align: center
+  }
+  
+  /*Styling Selectbox*/
+  .select {
+	width: 200px;
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 0.75em;
+	box-shadow: 0 0 2px rgb(204, 204, 204);
+	transition: all .5s ease;
+	position: relative;
+	font-size: 14px;
+	color: #474747;
+	height: 100%;
+  }
+  .select {
+	cursor: pointer;
+	display: block;
+	padding: 8px;
+	margin: 0 auto;
+	border-color: black;
+  }
+  .select > i {
+	font-size: 13px;
+	color: #888;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+	float: right;
+	line-height: 20px
+  }
+  .select:hover {
+	box-shadow: 0 0 4px rgb(204, 204, 204)
+  }
+  .select:active {
+	background-color: #f8f8f8
+  }
+  .select.active:hover,
+  .select.active {
+	box-shadow: 0 0 4px rgb(204, 204, 204);
+	border-radius: 2px 2px 0 0;
+	background-color: #f8f8f8
+  }
+  .select.active .select > i {
+	transform: rotate(-90deg)
+  }
+  .select .select-menu {
+	position: absolute;
+	background-color: #fff;
+	width: 100%;
+	left: 0;
+	margin-top: 1px;
+	box-shadow: 0 1px 2px rgb(204, 204, 204);
+	border-radius: 0 1px 2px 2px;
+	overflow: hidden;
+	display: none;
+	max-height: 144px;
+	overflow-y: auto;
+	z-index: 9
+  }
+  .select .select-menu li {
+	padding: 10px;
+	transition: all .2s ease-in-out;
+	cursor: pointer
+  } 
+  .select .select-menu {
+	padding: 0;
+	list-style: none
+  }
+  .select .select-menu li:hover {
+	background-color: #f2f2f2
+  }
+  .select .select-menu li:active {
+	background-color: #e2e2e2
+  }
+  input {
+	width: 180px;
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 0.75em;
+	box-shadow: 0 0 2px rgb(204, 204, 204);
+	transition: all .5s ease;
+	position: relative;
+	font-size: 14px;
+	color: #474747;
+	height: 100%;
+	border-width: thin;
+  }
+  input {
+	cursor: pointer;
+	display: block;
+	padding: 8px;
+	margin: 0 auto;
+	border-color: black;
+	margin-top: 20px;
+	margin-left: auto;
+    margin-right: auto;
+  }
