@@ -12,7 +12,7 @@ const fileServer = new static.Server();
 const requestListener = function (request, response) {
 
   // Serve static files.
-  if (request.method === 'GET' && request.url.startsWith('/assets/')) {
+  if (request.method === 'GET' && request.url.startsWith('/assets/')){
     fileServer.serve(request, response);
   }
 
